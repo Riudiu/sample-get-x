@@ -5,9 +5,6 @@ A new Flutter project.
 <br>
 
 ## Getting Started
-
-<br>
-
 미니 프레임워크라고 불릴 정도로 매우 가볍고 강력한 라이브러리
 
 <br>
