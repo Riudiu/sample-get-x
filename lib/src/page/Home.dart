@@ -20,7 +20,7 @@ class MyHome extends StatelessWidget {
                 },
                 child: Text('Route 관리')),
             ElevatedButton(onPressed: () {}, child: Text('State 관리')),
-            ElevatedButton(onPressed: () {}, child: Text('3')),
+            ElevatedButton(onPressed: () {}, child: Text('종속성 관리')),
           ],
         ),
       ),
