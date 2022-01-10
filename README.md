@@ -2,15 +2,24 @@
 
 A new Flutter project.
 
+<br>
+
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+미니 프레임워크라고 불릴 정도로 매우 가볍고 강력한 라이브러리
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<br>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 3가지 기본 원칙
+- 생산성
+- 성능 (시스템적으로 어느정도의 리소스를 사용하고, 어떻게 메모리를 최적화하면서 서비스를 돌릴 수 있을지)
+- 조직화 (각각 소스파일을 분리해서 필요한 부분만을 담당하게끔, 아무래도 소스와 코드가 깨끗하고 관리하기 편하다)
+
+<br>
+
+### 3가지 주요 기능
+- 라우트 관리 (기존의 navigator 역할을 더 간결한 코드로)
+- 상태 관리 (메인)
+- 종속성 관리 (view단에서 사용할 컨트롤러들을 어떤식으로 주입하고 사용할지, 그리고 더이상 사용되지 않을 때 등록된 컨트롤러의 리소스를 제거를 할지 또는 유지를 할지)
