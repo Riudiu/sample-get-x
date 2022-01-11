@@ -16,6 +16,7 @@ class RoutePage {
     GetPage(
       name: HOME_ROUTE,
       page: () => MyHome(),
+      transition: Transition.leftToRight,
     ),
     GetPage(
       name: ROUTE_MANAGE,
