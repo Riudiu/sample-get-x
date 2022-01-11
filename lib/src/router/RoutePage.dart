@@ -4,6 +4,7 @@ import 'package:sample_get_x/src/page/RouteManage.dart';
 import 'package:sample_get_x/src/page/argument/ArgumentNext.dart';
 import 'package:sample_get_x/src/page/named/NamedFirst.dart';
 import 'package:sample_get_x/src/page/named/NamedSecond.dart';
+import 'package:sample_get_x/src/page/url/UserPage.dart';
 
 class RoutePage {
   static const String HOME_ROUTE = "/home";
@@ -11,6 +12,7 @@ class RoutePage {
   static const String NAMED_FIRST = "/namedFirst";
   static const String NAMED_SECOND = "/namedSecond";
   static const String ARGUMENT_NEXT = "/argumentNext";
+  static const String URL_USER = "/user";
 
   static movePage(String pageName) => Get.toNamed(pageName);
 
@@ -44,6 +46,10 @@ class RoutePage {
     GetPage(
       name: ARGUMENT_NEXT,
       page: () => ArgumentNext(),
+    ),
+    GetPage(
+      name: URL_USER,
+      page: () => UserPage(),
     ),
   ];
 }

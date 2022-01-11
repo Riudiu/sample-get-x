@@ -46,6 +46,12 @@ class _RouteManageState extends State<RouteManage> {
                 Get.toNamed(RoutePage.ARGUMENT_NEXT, arguments: info());
               },
             ),
+            ElevatedButton(
+              child: Text('동적 URL'),
+              onPressed: () {
+                Get.toNamed('user?name=riudiu&age=22');
+              },
+            ),
           ],
         ),
       ),
