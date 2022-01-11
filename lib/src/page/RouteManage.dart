@@ -38,10 +38,23 @@ class _RouteManageState extends State<RouteManage> {
                 Get.toNamed(RoutePage.NAMED_FIRST);
               },
             ),
-            ElevatedButton(onPressed: () {}, child: Text('3')),
+            ElevatedButton(
+              child: Text('Argument 전달'),
+              onPressed: () {
+                // Get.toNamed(RoutePage.ARGUMENT_NEXT,
+                //     arguments: {"name": "riudiu", "age": "22"});
+                Get.toNamed(RoutePage.ARGUMENT_NEXT, arguments: info());
+              },
+            ),
           ],
         ),
       ),
     );
   }
+}
+
+class info {
+  String name = 'riudiu';
+  int age = 22;
+  String motto = 'Done is better than perfect';
 }
