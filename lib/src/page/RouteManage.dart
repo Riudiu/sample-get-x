@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sample_get_x/src/page/normal/NormalFirst.dart';
 import 'package:get/get.dart';
+import 'package:sample_get_x/src/router/RoutePage.dart';
 
 class RouteManage extends StatefulWidget {
   const RouteManage({Key? key}) : super(key: key);
@@ -30,7 +31,13 @@ class _RouteManageState extends State<RouteManage> {
                 Get.to(() => NormalFirst());
               },
             ),
-            ElevatedButton(onPressed: () {}, child: Text('2')),
+            ElevatedButton(
+              child: Text('Named 라우트'),
+              onPressed: () {
+                // Navigator.of(context).pushNamed("/namedFirst");
+                Get.toNamed(RoutePage.NAMED_FIRST);
+              },
+            ),
             ElevatedButton(onPressed: () {}, child: Text('3')),
           ],
         ),
