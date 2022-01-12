@@ -52,6 +52,38 @@ class _RouteManageState extends State<RouteManage> {
                 Get.toNamed('user?name=riudiu&age=22');
               },
             ),
+            SizedBox(height: 50),
+            ElevatedButton(
+              child: Text('스낵바 생성'),
+              onPressed: () {
+                Get.snackbar('This is SnackBar', 'Woowwowww',
+                    snackPosition: SnackPosition.TOP);
+              },
+            ),
+            ElevatedButton(
+              child: Text('Default Dialog'),
+              onPressed: () {
+                Get.defaultDialog(
+                    title: 'This is Dialog', middleText: 'yeeaaahhhh');
+              },
+            ),
+            ElevatedButton(
+              child: Text('Bottom Sheet'),
+              onPressed: () {
+                Get.bottomSheet(
+                  Container(
+                    height: 100,
+                    color: Colors.blue,
+                    child: Center(
+                      child: Text(
+                        'This is BottomSheet',
+                        style: TextStyle(color: Colors.white, fontSize: 18),
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),
