@@ -1,34 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:sample_get_x/src/router/RoutePage.dart';
 
-class MyHome extends StatelessWidget {
-  const MyHome({Key? key}) : super(key: key);
+class DependencyManage extends StatelessWidget {
+  const DependencyManage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GetX 주요 기능'),
+        title: Text('종속성 관리'),
+        backgroundColor: Colors.teal,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: () {
-                  RoutePage.movePage(RoutePage.ROUTE_MANAGE);
-                },
-                child: Text('Route 관리')),
-            ElevatedButton(
-              child: Text('State 관리'),
+              child: Text('의존성 주입'),
               onPressed: () {
-                RoutePage.movePage(RoutePage.STATE_MANAGE);
+                RoutePage.movePage(RoutePage.DEPENDENCY_INFUSE);
               },
             ),
             ElevatedButton(
-              child: Text('종속성 관리'),
+              child: Text('바인딩'),
               onPressed: () {
-                RoutePage.movePage(RoutePage.DEPENDENCY_MANAGE);
+                // RoutePage.movePage(RoutePage.);
               },
             ),
           ],
