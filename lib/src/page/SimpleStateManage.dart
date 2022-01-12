@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import 'package:sample_get_x/src/page/controller/CountControllerWithGetX.dart';
-import 'package:sample_get_x/src/page/controller/CountControllerWithProvider.dart';
+import 'package:sample_get_x/src/controller/CountControllerWithGetX.dart';
+import 'package:sample_get_x/src/controller/CountControllerWithProvider.dart';
 import 'package:sample_get_x/src/page/state/WithGetX.dart';
 import 'package:sample_get_x/src/page/state/WithProvider.dart';
-import 'controller/CountControllerWithGetXById.dart';
+import '../controller/CountControllerWithGetXById.dart';
 
 class SimpleStateManage extends StatelessWidget {
   const SimpleStateManage({Key? key}) : super(key: key);

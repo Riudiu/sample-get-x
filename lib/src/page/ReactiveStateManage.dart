@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sample_get_x/src/page/controller/CountControllerWithReactive.dart';
+import 'package:sample_get_x/src/controller/CountControllerWithReactive.dart';
 
 class ReactiveStateManage extends StatelessWidget {
   const ReactiveStateManage({Key? key}) : super(key: key);
