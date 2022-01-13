@@ -24,7 +24,7 @@ class DependencyManage extends StatelessWidget {
             ElevatedButton(
               child: Text('바인딩'),
               onPressed: () {
-                // RoutePage.movePage(RoutePage.);
+                RoutePage.movePage(RoutePage.BINDING_PAGE);
               },
             ),
           ],

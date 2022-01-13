@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:sample_get_x/src/binding/DependencyControllerBinding.dart';
+import 'package:sample_get_x/src/page/BindingPage.dart';
 import 'package:sample_get_x/src/page/DependencyManage.dart';
 import 'package:sample_get_x/src/page/Home.dart';
 import 'package:sample_get_x/src/page/ReactiveStateManage.dart';
@@ -23,6 +25,7 @@ class RoutePage {
   static const String SIMPLE_STATE_MANAGE = "/simpleStateManage";
   static const String REACTIVE_STATE_MANAGE = "/reactiveStateManage";
   static const String DEPENDENCY_INFUSE = "/dependencyInfuse";
+  static const String BINDING_PAGE = "/bindingPage";
 
   static movePage(String pageName) => Get.toNamed(pageName);
 
@@ -80,6 +83,11 @@ class RoutePage {
     GetPage(
       name: DEPENDENCY_INFUSE,
       page: () => DependencyInfuse(),
+    ),
+    GetPage(
+      name: BINDING_PAGE,
+      page: () => BindingPage(),
+      binding: DependencyControllerBinding(),
     ),
   ];
 }
