@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sample_get_x/src/router/RoutePage.dart';
 
-class MyHome extends StatelessWidget {
-  const MyHome({Key? key}) : super(key: key);
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +15,11 @@ class MyHome extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: () {
-                  RoutePage.movePage(RoutePage.ROUTE_MANAGE);
-                },
-                child: Text('Route 관리')),
+              child: Text('Route 관리'),
+              onPressed: () {
+                RoutePage.movePage(RoutePage.ROUTE_MANAGE);
+              },
+            ),
             ElevatedButton(
               child: Text('State 관리'),
               onPressed: () {

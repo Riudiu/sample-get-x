@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sample_get_x/src/controller/CountControllerWithGetX.dart';
-import 'package:sample_get_x/src/controller/CountControllerWithGetXById.dart';
+import 'package:sample_get_x/src/controller/simpleState/CountControllerWithGetX.dart';
+import 'package:sample_get_x/src/controller/simpleState/CountControllerWithGetXById.dart';
 
 class WithGetX extends StatelessWidget {
   const WithGetX({Key? key}) : super(key: key);

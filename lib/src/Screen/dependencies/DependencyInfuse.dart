@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sample_get_x/src/Screen/dependencies/GetLazyPut.dart';
+import 'package:sample_get_x/src/Screen/dependencies/GetPut.dart';
 import 'package:sample_get_x/src/controller/DependencyController.dart';
-import 'package:sample_get_x/src/page/dependencies/GetLazyPut.dart';
-import 'package:sample_get_x/src/page/dependencies/GetPut.dart';
 
 class DependencyInfuse extends StatelessWidget {
   const DependencyInfuse({Key? key}) : super(key: key);

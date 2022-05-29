@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sample_get_x/src/page/Home.dart';
+import 'package:sample_get_x/src/Screen/HomeScreen.dart';
 
 class NormalSecond extends StatelessWidget {
   const NormalSecond({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ class NormalSecond extends StatelessWidget {
               child: Text('홈으로 이동'),
               onPressed: () {
                 // 모든 이전 화면들을 삭제 후 이동
-                Get.offAll(MyHome());
+                Get.offAll(HomeScreen());
                 // Navigator.of(context).pushAndRemoveUntil(
                 //   MaterialPageRoute(builder: (_) => MyHome()),
                 //   (route) => false,

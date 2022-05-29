@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sample_get_x/src/page/normal/NormalFirst.dart';
 import 'package:get/get.dart';
+import 'package:sample_get_x/src/Screen/route/normal/NormalFirst.dart';
 import 'package:sample_get_x/src/router/RoutePage.dart';
 
 class RouteManage extends StatefulWidget {

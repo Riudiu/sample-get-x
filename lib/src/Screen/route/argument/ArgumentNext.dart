@@ -15,6 +15,7 @@ class ArgumentNext extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            /// Argument를 통해 데이터 전달
             Text('full : ${Get.arguments}'),
             Text('name : ${(Get.arguments).name}'),
             Text('age : ${(Get.arguments).age}'),

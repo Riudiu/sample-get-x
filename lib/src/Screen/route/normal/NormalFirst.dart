@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sample_get_x/src/page/normal/NormalSecond.dart';
+import 'package:sample_get_x/src/Screen/route/normal/NormalSecond.dart';
 
 class NormalFirst extends StatelessWidget {
   const NormalFirst({Key? key}) : super(key: key);

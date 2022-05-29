@@ -15,6 +15,7 @@ class UserPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            /// Parameter를 통해 데이터 전달
             Text('${Get.parameters['age']}살 ${Get.parameters['name']}님 환영합니다'),
             SizedBox(height: 15),
             Text('full : ${Get.parameters}'),
