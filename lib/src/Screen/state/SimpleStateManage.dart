@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import 'package:sample_get_x/src/Screen/state/WithGetX.dart';
-import 'package:sample_get_x/src/Screen/state/WithProvider.dart';
+import 'package:sample_get_x/src/Screen/state/simple/WithGetX.dart';
+import 'package:sample_get_x/src/Screen/state/simple/WithProvider.dart';
 import 'package:sample_get_x/src/controller/simpleState/CountControllerWithGetX.dart';
 import 'package:sample_get_x/src/controller/simpleState/CountControllerWithProvider.dart';
 import '../../controller/simpleState/CountControllerWithGetXById.dart';

@@ -20,11 +20,12 @@ class WithGetX extends StatelessWidget {
         children: [
           Text("GetX", style: TextStyle(fontSize: 30)),
           GetBuilder<CountControllerWithGetXById>(
-              id: "first",
-              builder: (controller) {
-                return Text("${controller.count}",
-                    style: TextStyle(fontSize: 50));
-              }),
+            id: "first",
+            builder: (controller) {
+              return Text("${controller.count}",
+                  style: TextStyle(fontSize: 50));
+            },
+          ),
           ElevatedButton(
             onPressed: () {
               // 컨트롤러의 update에 id를 부여하면 ex)update([{id}])
@@ -37,7 +38,11 @@ class WithGetX extends StatelessWidget {
               style: TextStyle(fontSize: 30),
             ),
           ),
+
+          /// sb
           SizedBox(height: 16),
+
+          /// 두번째 위젯
           GetBuilder<CountControllerWithGetX>(builder: (controller) {
             return Text("${controller.count}", style: TextStyle(fontSize: 50));
           }),

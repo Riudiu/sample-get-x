@@ -16,15 +16,15 @@ class DependencyManage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text('의존성 주입'),
-              onPressed: () {
-                RoutePage.movePage(RoutePage.DEPENDENCY_INFUSE);
-              },
-            ),
-            ElevatedButton(
               child: Text('바인딩'),
               onPressed: () {
                 RoutePage.movePage(RoutePage.BINDING_PAGE);
+              },
+            ),
+            ElevatedButton(
+              child: Text('의존성 주입'),
+              onPressed: () {
+                RoutePage.movePage(RoutePage.DEPENDENCY_INFUSE);
               },
             ),
           ],

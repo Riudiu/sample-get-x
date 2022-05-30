@@ -17,7 +17,10 @@ class WithProvider extends StatelessWidget {
               return Text("${snapshot.count}", style: TextStyle(fontSize: 50));
             },
           ),
+
           SizedBox(height: 12),
+
+          /// + 버튼
           ElevatedButton(
             onPressed: () {
               // listen : true 전체를 빌드 , listen : false로 하고 consumer를 등록하면 이 부분만 build된다.

@@ -12,10 +12,13 @@ class User {
 // getX는 컨트롤러의 생성과 삭제를 알아서 해준다.
 // instance했다는 것은 메모리에 올라가는 것인데 getX는 컨트롤러의 instance를 알아서 삭제해서 메모리를 관리해준다.
 class CountControllerWithReactive extends GetxController {
-  // obs는 observable의 약자
-  // 반응형으로 obs가 변화를 감지해준다.
+  static CountControllerWithReactive get to => Get.find();
+
+  /// obs는 observable의 약자
+  /// 반응형으로 obs가 변화를 감지해준다.
   RxInt count = 0.obs;
-  // 다른 타입들도 가능
+
+  /// 다른 타입들도 가능
   RxDouble doubleValue = 0.0.obs;
   RxString stringValue = "".obs;
   Rx<NUM> num = NUM.FIRST.obs;

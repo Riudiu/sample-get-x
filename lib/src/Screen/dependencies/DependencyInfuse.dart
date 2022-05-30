@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sample_get_x/src/Screen/dependencies/GetLazyPut.dart';
-import 'package:sample_get_x/src/Screen/dependencies/GetPut.dart';
+import 'package:sample_get_x/src/Screen/dependencies/di/GetLazyPut.dart';
+import 'package:sample_get_x/src/Screen/dependencies/di/GetPut.dart';
 import 'package:sample_get_x/src/controller/DependencyController.dart';
 
 class DependencyInfuse extends StatelessWidget {

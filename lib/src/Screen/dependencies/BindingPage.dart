@@ -20,7 +20,10 @@ class BindingPage extends StatelessWidget {
               return Text("${controller.number}",
                   style: TextStyle(fontSize: 37));
             }),
+
             SizedBox(height: 10),
+
+            /// - 버튼
             ElevatedButton(
               onPressed: () {
                 DependencyController.to.minus();
@@ -30,6 +33,8 @@ class BindingPage extends StatelessWidget {
                 style: TextStyle(fontSize: 30),
               ),
             ),
+
+            /// 컨트롤러 접근 버튼
             ElevatedButton(
               child: Text('컨트롤러 접근'),
               onPressed: () {
